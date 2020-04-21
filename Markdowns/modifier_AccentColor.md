@@ -29,90 +29,61 @@
   <img width="100%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/README_Assets/ChangeView.png"/>
 </details>
 
-# Action Sheet
+# Accent Color
 
 ## 1. Definition
 
-> An action sheet is a specific style of [**alert**](https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_ActionSheet.md) that appears in response to a control or action, and presents a set of **<u>two or more choices</u>** (recommend up to 3️⃣) related to the current context. 
+> Accent Color is the theme color of your apps, it can be applied on `Button` & `TabItem` . 
+>
+> The default accent color is `Color(.systemBlue)`
 
 <details open>
   <summary>Work like this: </summary>
   <p align="center">
-  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_ActionSheet.gif"/>
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_AccentColor.gif"/>
 </details>
+
 
 ## 2. Usage 
 
 ``` swift
 import SwiftUI
 
-struct ActionSheetView: View {
-    // 1.
-    @State var showActionSheet: Bool = false
+struct modifier_AccentColor: View {
     
-    // 2.
-    var actionSheet: ActionSheet {
-        ActionSheet(title: Text("Are you sure you want to discard your changes?"), 
-        message: Text("This cannot be undone."), 
-        buttons: [
-            .destructive(Text("Discard Changes")),
-            .default(Text("Save")),
-            .cancel(Text("Keep Editing"))
-            ]
-        )
-    }
-    // 3.
+    @State var showAccentColor: Bool = false
+    
     var body: some View {
         
-        Button(action: {self.showActionSheet.toggle() })
+        Button(action: {self.showAccentColor.toggle()})
         {
-            ButtonContent()
+            ButtonContent2(showAccentColor: $showAccentColor)
         }
-        .actionSheet(isPresented: $showActionSheet, content: {
-            self.actionSheet })
+        .accentColor(showAccentColor ? Color(.systemYellow) : nil)
     }
 }
 
-struct ActionSheetView_Previews: PreviewProvider {
+struct modifier_AccentColor_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ActionSheetView()
-                .environment(\.colorScheme, .light)
-            ActionSheetView()
-                .environment(\.colorScheme, .dark)
-        }
+        modifier_AccentColor()
     }
 }
 
-// Subview
-struct ButtonContent: View {
+struct ButtonContent2: View {
+    
+    @Binding var showAccentColor: Bool
+    
     var body: some View {
-        Text("🤹🏻 Cancel")
+        Text(showAccentColor ? "With Accent Color" : "No Accent Color")
             .font(.system(size: 25))
             .padding()
-            .foregroundColor(Color(.systemBlue)) // adaptable in dark mode
+//            .foregroundColor(Color(.systemBlue)) // adaptable in dark mode
             //                .frame(width: 160, height: 60)
             .background(Color(.secondarySystemBackground))  // adaptable in dark mode
             .cornerRadius(20)
-            .shadow(color: Color(.systemBlue).opacity(0.4), radius: 10, x: 0, y: 10)
+            .shadow(color: showAccentColor ? Color(.systemYellow).opacity(0.2) : Color(.systemBlue).opacity(0.2), radius: 10, x: 0, y: 10)
         // adaptable backgroud frame size
     }
 }
 ```
-
-### Type Methods
-
-``` swift 
-.destructive(Text("Discard Changes")), // red 🔴 text
-.default(Text("Save")), // blue 🔵 text
-.cancel(Text("Keep Editing")) // blue 🔵 & bold 𝐁 text
-```
-
-## 3. Insights
-
-According to [HIG](https://developer.apple.com/design/human-interface-guidelines/ios/views/action-sheets/)(human-interface-guidelines) about *Action Sheet*, we should:
-
-- **Provide a Cancel button if it adds clarity**
-- **Make destructive choices prominent** (**<u>important</u>** ❗️ when data get involved)
-- **Avoid enabling scrolling in an action sheet**
 

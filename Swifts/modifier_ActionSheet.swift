@@ -49,7 +49,7 @@ struct ActionSheetView_Previews: PreviewProvider {
 // Subview
 struct ButtonContent: View {
     var body: some View {
-        Text("🤹🏻 Cancel")
+        Text("    🤹🏻    ")
             .font(.system(size: 25))
             .padding()
             .foregroundColor(Color(.systemBlue)) // adaptable in dark mode

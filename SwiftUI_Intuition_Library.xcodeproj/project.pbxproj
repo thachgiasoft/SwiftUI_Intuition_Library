@@ -22,6 +22,8 @@
 		28D1F86D244EF56D00198120 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 28D1F86C244EF56D00198120 /* LICENSE */; };
 		28D1F86F244EF58200198120 /* README_Assets in Resources */ = {isa = PBXBuildFile; fileRef = 28D1F86E244EF58200198120 /* README_Assets */; };
 		28D1F871244EF5A500198120 /* GIFs in Resources */ = {isa = PBXBuildFile; fileRef = 28D1F870244EF5A500198120 /* GIFs */; };
+		28D1F873244F00F500198120 /* modifier_AccentColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1F872244F00F500198120 /* modifier_AccentColor.swift */; };
+		28D1F875244F0EB200198120 /* modifier_BlendMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1F874244F0EB200198120 /* modifier_BlendMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		28D1F86C244EF56D00198120 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		28D1F86E244EF58200198120 /* README_Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = README_Assets; sourceTree = "<group>"; };
 		28D1F870244EF5A500198120 /* GIFs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GIFs; sourceTree = "<group>"; };
+		28D1F872244F00F500198120 /* modifier_AccentColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modifier_AccentColor.swift; sourceTree = "<group>"; };
+		28D1F874244F0EB200198120 /* modifier_BlendMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modifier_BlendMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				28D1F85F244EF47F00198120 /* modifier_ContextMenu.swift */,
 				28D1F862244EF48000198120 /* modifier_Popover.swift */,
 				28D1F861244EF48000198120 /* modifier_Sheet.swift */,
+				28D1F872244F00F500198120 /* modifier_AccentColor.swift */,
+				28D1F874244F0EB200198120 /* modifier_BlendMode.swift */,
 			);
 			path = Swifts;
 			sourceTree = "<group>";
@@ -194,11 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D1F873244F00F500198120 /* modifier_AccentColor.swift in Sources */,
 				28D1F865244EF48000198120 /* modifier_Sheet.swift in Sources */,
 				28D1F841244EF22400198120 /* AppDelegate.swift in Sources */,
 				28D1F843244EF22400198120 /* SceneDelegate.swift in Sources */,
 				28D1F863244EF48000198120 /* modifier_Popover.swift in Sources */,
 				28D1F864244EF48000198120 /* modifier_Alert.swift in Sources */,
+				28D1F875244F0EB200198120 /* modifier_BlendMode.swift in Sources */,
 				28D1F866244EF48000198120 /* modifier_ContextMenu.swift in Sources */,
 				28D1F85D244EF42400198120 /* modifier_ActionSheet.swift in Sources */,
 			);

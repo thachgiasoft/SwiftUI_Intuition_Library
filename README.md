@@ -141,9 +141,9 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
 
 ## Effect
 
-- [ ] Accent Color 
+- [x] Accent Color 
 
-- [ ] Blend Mode 
+- [x] Blend Mode 
 
 - [ ] Blur 
 

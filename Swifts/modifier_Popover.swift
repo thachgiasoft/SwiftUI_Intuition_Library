@@ -23,7 +23,7 @@ struct PopoverView: View {
                 arrowEdge: .bottom
 //                , content: @escaping () -> Content) -> some View where Content : View
             )
-            { ButtonContent4() }
+            { ButtonContent() }
         }
     }
 }
@@ -35,17 +35,4 @@ struct PopoverView_Previews: PreviewProvider {
     }
 }
 
-// Subview
-struct ButtonContent4: View {
-    var body: some View {
-        Text("  🤹🏻  ")
-            .font(.system(size: 25))
-            .padding()
-            .foregroundColor(Color(.systemBlue)) // adaptable in dark mode
-            //                .frame(width: 160, height: 60)
-            .background(Color(.secondarySystemBackground))  // adaptable in dark mode
-            .cornerRadius(20)
-            .shadow(color: Color(.systemBlue).opacity(0.4), radius: 10, x: 0, y: 10)
-        // adaptable backgroud frame size
-    }
-}
+
