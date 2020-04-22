@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28806448244FCCB500AB97A4 /* Grid in Frameworks */ = {isa = PBXBuildFile; productRef = 28806447244FCCB500AB97A4 /* Grid */; };
 		28D1F841244EF22400198120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1F840244EF22400198120 /* AppDelegate.swift */; };
 		28D1F843244EF22400198120 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1F842244EF22400198120 /* SceneDelegate.swift */; };
 		28D1F847244EF22600198120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D1F846244EF22600198120 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28806448244FCCB500AB97A4 /* Grid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +142,9 @@
 			dependencies = (
 			);
 			name = SwiftUI_Intuition_Library;
+			packageProductDependencies = (
+				28806447244FCCB500AB97A4 /* Grid */,
+			);
 			productName = SwiftUI_Intuition_Library;
 			productReference = 28D1F83D244EF22400198120 /* SwiftUI_Intuition_Library.app */;
 			productType = "com.apple.product-type.application";
@@ -168,6 +173,9 @@
 				Base,
 			);
 			mainGroup = 28D1F834244EF22400198120;
+			packageReferences = (
+				28806446244FCCB500AB97A4 /* XCRemoteSwiftPackageReference "swiftui-grid" */,
+			);
 			productRefGroup = 28D1F83E244EF22400198120 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -402,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28806446244FCCB500AB97A4 /* XCRemoteSwiftPackageReference "swiftui-grid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spacenation/swiftui-grid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28806447244FCCB500AB97A4 /* Grid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28806446244FCCB500AB97A4 /* XCRemoteSwiftPackageReference "swiftui-grid" */;
+			productName = Grid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28D1F835244EF22400198120 /* Project object */;
 }
