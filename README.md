@@ -141,9 +141,29 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
 
 ## Effect
 
-- [x] Accent Color 
+### Accent Color 
 
-- [x] Blend Mode 
+> Accent Color is the theme color of your apps, it can be applied on `Button` & `TabItem` . 
+>
+> The default accent color is `Color(.systemBlue)`
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_AccentColor.gif"/>
+</details>
+---
+
+### Blend Mode 
+
+> Sets the blend mode for compositing the view with **overlapping** views.
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_BlendMode.gif"/>
+</details>
+---
 
 - [ ] Blur 
 

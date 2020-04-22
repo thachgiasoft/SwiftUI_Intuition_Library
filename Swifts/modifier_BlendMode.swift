@@ -7,93 +7,65 @@
 //
 
 import SwiftUI
+import Grid
 
 struct modifier_BlendMode: View {
     
-    @State private var s_effect = BlendMode.colorDodge
-
-    var effectText: Array = [
-          "color"
-        , "colorBurn"
-        , "colorDodge"
-        , "darken"
-        , "destinationOut"
-        , "destinationOver"
-        , "difference"
-        , "exclusion"
-        , "hardLight"
-        , "hue"
-        , "lighten"
-        , "luminosity"
-        , "multiply"
-        , "normal"
-        , "overlay"
-        , "plusDarker"
-        , "plusLighter"
-        , "saturation"
-        , "screen"
-        , "softLight"
-        , "sourceAtop"
-    ]
-    
-    var effect: Array = [
-          BlendMode.color
-        , BlendMode.colorBurn
-        , BlendMode.colorDodge
-        , BlendMode.darken
-        , BlendMode.destinationOut
-        , BlendMode.destinationOver
-        , BlendMode.difference
-        , BlendMode.exclusion
-        , BlendMode.hardLight
-        , BlendMode.hue
-        , BlendMode.lighten
-        , BlendMode.luminosity
-        , BlendMode.multiply
-        , BlendMode.normal
-        , BlendMode.overlay
-        , BlendMode.plusDarker
-        , BlendMode.plusLighter
-        , BlendMode.saturation
-        , BlendMode.screen
-        , BlendMode.softLight
-        , BlendMode.sourceAtop
-    ]
-    
     var body: some View {
-        VStack {
-////            Image("IMG_7220")
-////                .resizable()
-////                .scaledToFill()
-////                .frame(width: UIScreen.main.bounds.width)
-////                .overlay(
-//                    VStack (spacing: 0){
-////                        Spacer().frame(height: 30)
-//                        
-//                        Picker(selection: $s_effect, label: Text("")) {
-//                            ForEach (effect, id: \.self) {effect in
-                                Image("SwiftUI_icon")
-//                                .frame(width: 300, height: 300)
-////                                .offset(y: 50)
-//                                .blendMode(effect)
-//                            }
-//                        }
-//                        .frame(maxHeight: .infinity)
-//                        .background(BlurBg(style: .systemUltraThinMaterial))
-//                    .labelsHidden()
-//                    .cornerRadius(20)
-////                        Spacer()
-//                    }.padding(.horizontal)
-//            )
+        NavigationView {
+            ScrollView {
+                Grid(effectArray, id: \.self) { effect in
+                    ExtractedView(effect: effect)
+                }
+                .padding()
             }
-                        .edgesIgnoringSafeArea(.all)
+                .gridStyle(
+                ModularGridStyle(columns: .min(170), rows: .min(170), spacing: 15))
+            .navigationBarTitle("BlendMode", displayMode: .automatic)
+        }
     }
-
 }
 
 struct modifier_BlendMode_Previews: PreviewProvider {
     static var previews: some View {
-        modifier_BlendMode()
+        modifier_BlendMode().previewDevice("iPhone 11")
+    }
+}
+
+
+struct ExtractedView: View {
+    
+    var effect: Effect
+    
+    var body: some View {
+        Rectangle()
+            .foregroundColor(.clear)
+            .overlay(
+                Image("IMG_7220")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 180, height: 180, alignment: .bottom)
+                    .clipped()
+                    .overlay(
+                        VStack {
+                            Image("SwiftUI_icon")
+                                .resizable()
+                                .scaledToFill()
+                                //                        .offset(y: 10)
+                                .blendMode(effect.effect)
+                    })
+                    .overlay(Text(effect.effectText)
+                        .font(.subheadline)
+                        .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))                        .background(BlurBg())
+                        .cornerRadius(10)
+                        .offset(y: 68)
+                )
+                    
+                
+        )
+            .cornerRadius(30)
+//
+        
     }
 }
 
@@ -109,3 +81,32 @@ struct BlurBg: UIViewRepresentable {
         uiView.effect = UIBlurEffect(style: style)
     }
 }
+
+struct Effect: Hashable {
+    var effect: BlendMode
+    var effectText: String
+}
+
+let effectArray: Array = [
+    Effect(effect: BlendMode.color, effectText: "color"),
+    Effect(effect: BlendMode.colorBurn, effectText: "colorBurn"),
+    Effect(effect: BlendMode.colorDodge, effectText: "colorDodge"),
+    Effect(effect: BlendMode.darken, effectText: "darken"),
+    Effect(effect: BlendMode.destinationOut, effectText: "destinationOut"),
+    Effect(effect: BlendMode.destinationOver, effectText: "destinationOver"),
+    Effect(effect: BlendMode.difference, effectText: "difference"),
+    Effect(effect: BlendMode.exclusion, effectText: "exclusion"),
+    Effect(effect: BlendMode.hardLight, effectText: "hardLight"),
+    Effect(effect: BlendMode.saturation, effectText: "hue"),
+    Effect(effect: BlendMode.lighten, effectText: "lighten"),
+    Effect(effect: BlendMode.luminosity, effectText: "luminosity"),
+    Effect(effect: BlendMode.multiply, effectText: "multiply"),
+    Effect(effect: BlendMode.normal, effectText: "normal"),
+    Effect(effect: BlendMode.overlay, effectText: "overlay"),
+    Effect(effect: BlendMode.plusDarker, effectText: "plusDarker"),
+    Effect(effect: BlendMode.plusLighter, effectText: "plusLighter"),
+    Effect(effect: BlendMode.saturation, effectText: "saturation"),
+    Effect(effect: BlendMode.screen, effectText: "screen"),
+    Effect(effect: BlendMode.softLight, effectText: "softLight"),
+    Effect(effect: BlendMode.sourceAtop, effectText: "sourceAtop")
+    ]
