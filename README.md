@@ -165,9 +165,31 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
 </details>
 ---
 
-- [ ] Blur 
+### Blur 
 
-- [ ] Border 
+> `.blur()`Applies a Gaussian blur to the **view**.
+>
+> If you want to apply it to **backgrounde**, you have to add few more code. See  `struct BlurBg`
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_Blur.gif"/>
+</details>
+
+### Border 
+
+> `.border()` is always a **rectangle**, and draws border **inside** its frame.
+>
+> `.stroke()` can be **shaped**, and draws border **right in** its frame.
+>
+> `.strokeBorder()` can be **shaped**, and draws border **inside** its frame.
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_Border.gif"/>
+</details>
 
 - [ ] Brightness 
 
@@ -481,9 +503,23 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
 
 - [ ] Size
 
-- [ ] Stroke
+### Stroke
 
-- [ ] Stroke Border
+> `.border()` is always a **rectangle**, and draws border **inside** its frame.
+>
+> `.stroke()` can be **shaped**, and draws border **right in** its frame.
+>
+> `.strokeBorder()` can be **shaped**, and draws border **inside** its frame.
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_Border.gif"/>
+</details>
+
+### Stroke Border
+
+👆🏻
 
 - [ ] Transform
 

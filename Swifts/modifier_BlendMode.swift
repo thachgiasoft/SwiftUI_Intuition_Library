@@ -56,12 +56,11 @@ struct ExtractedView: View {
                     })
                     .overlay(Text(effect.effectText)
                         .font(.subheadline)
-                        .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))                        .background(BlurBg())
+                        .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
+                        .background(BlurBg(style: .systemUltraThinMaterial))
                         .cornerRadius(10)
                         .offset(y: 68)
                 )
-                    
-                
         )
             .cornerRadius(30)
 //
