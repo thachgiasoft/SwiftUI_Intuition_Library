@@ -32,7 +32,6 @@
 
 🧰 Tools
 - I use [*Gifox*](https://gifox.io) (app) to record ⏺ GIFs 
-- and [*EZGIF*](https://ezgif.com/combine) (web) to combine 🧲 them
 
 👁‍🗨 Change View in Xcode
 <details open>
@@ -125,7 +124,7 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
 </details>
 
 <p align="center">
-for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Sheet.md" target=“_blank”>08_SheetView</a>
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Sheet.md" target=“_blank”>modifier_Sheet</a>
 
 
 ------
@@ -152,6 +151,10 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
   <p align="center">
   <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_AccentColor.gif"/>
 </details>
+
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_AccentColor.md" target=“_blank”>modifier_AccentColor.md</a>
+
 ---
 
 ### Blend Mode 
@@ -163,6 +166,9 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
   <p align="center">
   <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_BlendMode.gif"/>
 </details>
+
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_BlendMode.md" target=“_blank”>modifier_BlendMode.md</a>
 ---
 
 ### Blur 
@@ -177,7 +183,11 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
   <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_Blur.gif"/>
 </details>
 
-### Border 
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Blur.md" target=“_blank”>modifier_Blur.md</a>
+---
+
+### Border & Stroke & StrokeBorder
 
 > `.border()` is always a **rectangle**, and draws border **inside** its frame.
 >
@@ -191,25 +201,121 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
   <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_Border.gif"/>
 </details>
 
-- [ ] Brightness 
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Border.md" target=“_blank”>modifier_Border.md</a>
+---
 
-- [ ] Clip Shape
+### Brightness
 
-- [ ] Clipped
+> `.brightness()` applies to the **view**. and its suggested range is from -1 to 1 (`Double`)
 
-- [ ] Invert
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_Brightness.gif"/>
+</details>
 
-- [ ] Color Multiply 
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Brightness.md" target=“_blank”>modifier_Brightness.md</a>
+--
 
-- [ ] Color Scheme 
+### Clip Shape
+
+> `.clipShape()` applies to the **shape**.
+>
+> `.clipped()` applies to the **frame**.
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_ClipShape.gif"/>
+</details>
+
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_ClipShape.md" target=“_blank”>modifier_ClipShape.md</a>
+--
+
+### Clipped
+
+<p align="center">
+see <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_ClipShape.md" target=“_blank”>modifier_ClipShape.md</a>
+--
+
+### Invert
+
+> Inverts the colors in the view.
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_ColorInvert.gif"/>
+</details>
+
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_ColorInvert.md" target=“_blank”>modifier_ColorInvert.md</a>
+--
+
+### Color Multiply 
+
+> Adds a color multiplication effect to the view.
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_ColorMultiply.gif"/>
+</details>
+
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_ColorMultiply.md" target=“_blank”>modifier_ColorMultiply.md</a>
+--
+
+### Color Scheme 
+
+> Sets the view’s color scheme. (Dark mode preview)
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_ColorScheme.gif"/>
+</details>
+
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_ColorScheme.md" target=“_blank”>modifier_ColorScheme.md</a>
+--
 
 - [ ] Compositing Group 
 
 - [ ] Content Shape 
 
-- [ ] Contrast 
+### Contrast 
 
-- [ ] Corner Radius 
+> `.contrast()` applies to the **view**. and its suggested range is from -5 to 5 (`Double`)
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_Contrast.gif"/>
+</details>
+
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Contrast.md" target=“_blank”>modifier_Contrast.md</a>
+--
+
+### Corner Radius
+
+> `.cornerRadius()` applies to the **view**.
+>
+> and when its amount **is closer to its frame**, it would be `.clipShape(Circle())` 
+
+<details open>
+  <summary>Work like this: </summary>
+  <p align="center">
+  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_CornerRadius.gif"/>
+</details>
+
+<p align="center">
+for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_CornerRadius.md" target=“_blank”>modifier_CornerRadius.md</a>
+--
 
 - [ ] Drawing Group 
 
@@ -502,24 +608,6 @@ for more details, go to <a href="https://github.com/no-more-coding/SwiftUI_Intui
 - [ ] Scale
 
 - [ ] Size
-
-### Stroke
-
-> `.border()` is always a **rectangle**, and draws border **inside** its frame.
->
-> `.stroke()` can be **shaped**, and draws border **right in** its frame.
->
-> `.strokeBorder()` can be **shaped**, and draws border **inside** its frame.
-
-<details open>
-  <summary>Work like this: </summary>
-  <p align="center">
-  <img width="35%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/GIFs/modifier_Border.gif"/>
-</details>
-
-### Stroke Border
-
-👆🏻
 
 - [ ] Transform
 

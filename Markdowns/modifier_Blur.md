@@ -20,7 +20,7 @@
 
   🧰 Tools
   - I use [*Gifox*](https://gifox.io) (app) to record ⏺ GIFs
-  - and [*EZGIF*](https://ezgif.com/combine) (web) to combine 🧲 them
+  
 
 👁‍🗨 Change View in Xcode
 <details open>
@@ -51,9 +51,7 @@
 import SwiftUI
 
 struct modifier_Blur: View {
-    
-    @State private var isBlurOn = false
-    
+        
     @State private var blurAmount: CGFloat = 0.0
     
     var body: some View {

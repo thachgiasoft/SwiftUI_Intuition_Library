@@ -20,7 +20,7 @@
 
   🧰 Tools
   - I use [*Gifox*](https://gifox.io) (app) to record ⏺ GIFs 
-  - and [*EZGIF*](https://ezgif.com/combine) (web) to combine 🧲 them
+  
 
 👁‍🗨 Change View in Xcode
 <details open>

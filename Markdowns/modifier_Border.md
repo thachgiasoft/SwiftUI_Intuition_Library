@@ -20,7 +20,7 @@
 
   🧰 Tools
   - I use [*Gifox*](https://gifox.io) (app) to record ⏺ GIFs
-  - and [*EZGIF*](https://ezgif.com/combine) (web) to combine 🧲 them
+  
 
 👁‍🗨 Change View in Xcode
 <details open>
@@ -29,7 +29,7 @@
   <img width="100%" src="https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/README_Assets/ChangeView.png"/>
 </details>
 
-# Border 
+# Border & Stroke & StrokeBorder
 
 ## 1. Definition
 
